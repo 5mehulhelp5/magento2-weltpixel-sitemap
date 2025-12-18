@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <weltpixel_sitemap>
+            <general>
+                <use_canonical_url_for_product>0</use_canonical_url_for_product>
+                <use_canonical_url_for_category>0</use_canonical_url_for_category>
+                <use_canonical_url_for_cmspage>0</use_canonical_url_for_cmspage>
+                <filtered_product_listings_robots>NOINDEX,FOLLOW</filtered_product_listings_robots>
+                <filtered_product_listings_search_results_robots>NOINDEX,FOLLOW</filtered_product_listings_search_results_robots>
+            </general>
+        </weltpixel_sitemap>
+    </default>
+</config>

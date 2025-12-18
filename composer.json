@@ -1,0 +1,20 @@
+{
+    "name": "weltpixel/magento2-weltpixel-sitemap",
+    "description": "WeltPixel Sitemap Module",
+    "require": {
+        "magento/module-sitemap": "*",
+        "magento/module-cms": "*",
+        "magento/module-catalog": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.15.11",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "WeltPixel\\Sitemap\\": ""
+        }
+    }
+}

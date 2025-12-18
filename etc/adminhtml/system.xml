@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="weltpixel_sitemap" translate="label" type="text" sortOrder="165" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Sitemap Generation</label>
+            <tab>weltpixel</tab>
+            <resource>WeltPixel_Sitemap::SitemapSettings</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Sitemap General Settings</label>
+                <field id="use_canonical_url_for_product" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use Canonical URL in Sitemap for All Products</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Choose Yes if you'd like the Sitemap to use the Canonical URL for all Products that have it set at the product-level. This will override the product-level Use Canonical URL in Sitemap setting.</comment>
+                </field>
+                <field id="use_canonical_url_for_category" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use Canonical URL in Sitemap for All Categories</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Choose Yes if you'd like the Sitemap to use the Canonical URL for all Categories that have it set at the category-level. This will override the category-level Use Canonical URL in Sitemap setting.</comment>
+                </field>
+                <field id="use_canonical_url_for_cmspage" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use Canonical URL in Sitemap for all CMS Pages</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Choose Yes if you'd like the Sitemap to use the Canonical URL for all CMS Pages that have it set at the CMS Page-level. This will override the CMS Page-level Use Canonical URL in Sitemap setting.</comment>
+                </field>
+                <field id="filtered_product_listings_robots" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Filtered Product Listings Robots Value</label>
+                    <source_model>Magento\Config\Model\Config\Source\Design\Robots</source_model>
+                    <comment>Choose the desired robots value for Filtered Product Listing Pages.</comment>
+                </field>
+                <field id="filtered_product_listings_search_results_robots" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Filtered Product Listings Search Results Robots Value</label>
+                    <source_model>Magento\Config\Model\Config\Source\Design\Robots</source_model>
+                    <comment>Choose the desired robots value for Filtered Product Listing Pages on Search Results</comment>
+                </field>
+                <field id="meta_robots_options" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Robots Options</label>
+                    <frontend_model>WeltPixel\Sitemap\Block\Adminhtml\Form\Field\MetaRobots</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Here you can set for each magento route the desired meta robot value. Ex: customer/account/create.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
